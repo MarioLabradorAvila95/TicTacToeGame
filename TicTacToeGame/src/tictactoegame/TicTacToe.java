@@ -196,9 +196,11 @@ public class TicTacToe extends javax.swing.JFrame {
         btnReset = new javax.swing.JButton();
         btnNuevo = new javax.swing.JButton();
         lblPuntos = new javax.swing.JLabel();
+        jLabel1 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setResizable(false);
+        getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         btn1.setFont(new java.awt.Font("Tahoma", 0, 48)); // NOI18N
         btn1.addActionListener(new java.awt.event.ActionListener() {
@@ -206,6 +208,7 @@ public class TicTacToe extends javax.swing.JFrame {
                 btn1ActionPerformed(evt);
             }
         });
+        getContentPane().add(btn1, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 21, 85, 85));
 
         btn2.setFont(new java.awt.Font("Tahoma", 0, 48)); // NOI18N
         btn2.addActionListener(new java.awt.event.ActionListener() {
@@ -213,6 +216,7 @@ public class TicTacToe extends javax.swing.JFrame {
                 btn2ActionPerformed(evt);
             }
         });
+        getContentPane().add(btn2, new org.netbeans.lib.awtextra.AbsoluteConstraints(101, 21, 85, 85));
 
         btn3.setFont(new java.awt.Font("Tahoma", 0, 48)); // NOI18N
         btn3.addActionListener(new java.awt.event.ActionListener() {
@@ -220,6 +224,7 @@ public class TicTacToe extends javax.swing.JFrame {
                 btn3ActionPerformed(evt);
             }
         });
+        getContentPane().add(btn3, new org.netbeans.lib.awtextra.AbsoluteConstraints(192, 21, 85, 85));
 
         btn4.setFont(new java.awt.Font("Tahoma", 0, 48)); // NOI18N
         btn4.addActionListener(new java.awt.event.ActionListener() {
@@ -227,6 +232,7 @@ public class TicTacToe extends javax.swing.JFrame {
                 btn4ActionPerformed(evt);
             }
         });
+        getContentPane().add(btn4, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 112, 85, 85));
 
         btn5.setFont(new java.awt.Font("Tahoma", 0, 48)); // NOI18N
         btn5.addActionListener(new java.awt.event.ActionListener() {
@@ -234,6 +240,7 @@ public class TicTacToe extends javax.swing.JFrame {
                 btn5ActionPerformed(evt);
             }
         });
+        getContentPane().add(btn5, new org.netbeans.lib.awtextra.AbsoluteConstraints(101, 112, 85, 85));
 
         btn6.setFont(new java.awt.Font("Tahoma", 0, 48)); // NOI18N
         btn6.addActionListener(new java.awt.event.ActionListener() {
@@ -241,6 +248,7 @@ public class TicTacToe extends javax.swing.JFrame {
                 btn6ActionPerformed(evt);
             }
         });
+        getContentPane().add(btn6, new org.netbeans.lib.awtextra.AbsoluteConstraints(192, 112, 85, 85));
 
         btn7.setFont(new java.awt.Font("Tahoma", 0, 48)); // NOI18N
         btn7.addActionListener(new java.awt.event.ActionListener() {
@@ -248,6 +256,7 @@ public class TicTacToe extends javax.swing.JFrame {
                 btn7ActionPerformed(evt);
             }
         });
+        getContentPane().add(btn7, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 203, 85, 85));
 
         btn8.setFont(new java.awt.Font("Tahoma", 0, 48)); // NOI18N
         btn8.addActionListener(new java.awt.event.ActionListener() {
@@ -255,6 +264,7 @@ public class TicTacToe extends javax.swing.JFrame {
                 btn8ActionPerformed(evt);
             }
         });
+        getContentPane().add(btn8, new org.netbeans.lib.awtextra.AbsoluteConstraints(101, 203, 85, 85));
 
         btn9.setFont(new java.awt.Font("Tahoma", 0, 48)); // NOI18N
         btn9.addActionListener(new java.awt.event.ActionListener() {
@@ -262,27 +272,32 @@ public class TicTacToe extends javax.swing.JFrame {
                 btn9ActionPerformed(evt);
             }
         });
+        getContentPane().add(btn9, new org.netbeans.lib.awtextra.AbsoluteConstraints(192, 203, 85, 85));
 
         jTextField1.setEditable(false);
         jTextField1.setBackground(new java.awt.Color(102, 153, 255));
         jTextField1.setHorizontalAlignment(javax.swing.JTextField.CENTER);
         jTextField1.setText("Turno");
         jTextField1.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
+        getContentPane().add(jTextField1, new org.netbeans.lib.awtextra.AbsoluteConstraints(324, 21, 168, 31));
 
         txtTurno.setEditable(false);
         txtTurno.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        getContentPane().add(txtTurno, new org.netbeans.lib.awtextra.AbsoluteConstraints(324, 58, 168, 37));
 
         jTextField3.setEditable(false);
         jTextField3.setBackground(new java.awt.Color(255, 0, 0));
         jTextField3.setHorizontalAlignment(javax.swing.JTextField.CENTER);
         jTextField3.setText("Jugador 1");
         jTextField3.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
+        getContentPane().add(jTextField3, new org.netbeans.lib.awtextra.AbsoluteConstraints(324, 113, 82, 30));
 
         jTextField4.setEditable(false);
         jTextField4.setBackground(new java.awt.Color(0, 102, 204));
         jTextField4.setHorizontalAlignment(javax.swing.JTextField.CENTER);
         jTextField4.setText("Jugador 2");
         jTextField4.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
+        getContentPane().add(jTextField4, new org.netbeans.lib.awtextra.AbsoluteConstraints(412, 113, 80, 30));
 
         txtJugador1.setEditable(false);
         txtJugador1.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
@@ -292,10 +307,12 @@ public class TicTacToe extends javax.swing.JFrame {
                 txtJugador1ActionPerformed(evt);
             }
         });
+        getContentPane().add(txtJugador1, new org.netbeans.lib.awtextra.AbsoluteConstraints(324, 149, 82, 58));
 
         txtJugador2.setEditable(false);
         txtJugador2.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         txtJugador2.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        getContentPane().add(txtJugador2, new org.netbeans.lib.awtextra.AbsoluteConstraints(412, 149, 80, 58));
 
         btnReset.setBackground(new java.awt.Color(153, 153, 153));
         btnReset.setText("Reiniciar");
@@ -304,6 +321,7 @@ public class TicTacToe extends javax.swing.JFrame {
                 btnResetActionPerformed(evt);
             }
         });
+        getContentPane().add(btnReset, new org.netbeans.lib.awtextra.AbsoluteConstraints(324, 225, 168, 27));
 
         btnNuevo.setBackground(new java.awt.Color(153, 153, 153));
         btnNuevo.setText("Jugar de nuevo");
@@ -313,92 +331,14 @@ public class TicTacToe extends javax.swing.JFrame {
                 btnNuevoActionPerformed(evt);
             }
         });
+        getContentPane().add(btnNuevo, new org.netbeans.lib.awtextra.AbsoluteConstraints(324, 261, 168, -1));
 
-        javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
-        getContentPane().setLayout(layout);
-        layout.setHorizontalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addContainerGap()
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(layout.createSequentialGroup()
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                .addGroup(layout.createSequentialGroup()
-                                    .addComponent(btn7, javax.swing.GroupLayout.PREFERRED_SIZE, 85, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                    .addComponent(btn8, javax.swing.GroupLayout.PREFERRED_SIZE, 85, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                    .addComponent(btn9, javax.swing.GroupLayout.PREFERRED_SIZE, 85, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                .addGroup(layout.createSequentialGroup()
-                                    .addComponent(btn4, javax.swing.GroupLayout.PREFERRED_SIZE, 85, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                    .addComponent(btn5, javax.swing.GroupLayout.PREFERRED_SIZE, 85, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                    .addComponent(btn6, javax.swing.GroupLayout.PREFERRED_SIZE, 85, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                            .addGroup(layout.createSequentialGroup()
-                                .addComponent(btn1, javax.swing.GroupLayout.PREFERRED_SIZE, 85, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(btn2, javax.swing.GroupLayout.PREFERRED_SIZE, 85, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(btn3, javax.swing.GroupLayout.PREFERRED_SIZE, 85, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                        .addGap(47, 47, 47)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jTextField1, javax.swing.GroupLayout.Alignment.TRAILING)
-                            .addComponent(txtTurno, javax.swing.GroupLayout.Alignment.TRAILING)
-                            .addGroup(layout.createSequentialGroup()
-                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                                    .addComponent(jTextField3, javax.swing.GroupLayout.DEFAULT_SIZE, 82, Short.MAX_VALUE)
-                                    .addComponent(txtJugador1))
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                                    .addComponent(jTextField4, javax.swing.GroupLayout.DEFAULT_SIZE, 80, Short.MAX_VALUE)
-                                    .addComponent(txtJugador2)))
-                            .addComponent(btnNuevo, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                            .addComponent(btnReset, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
-                    .addComponent(lblPuntos, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                .addContainerGap())
-        );
-        layout.setVerticalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addGap(21, 21, 21)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
-                    .addGroup(javax.swing.GroupLayout.Alignment.LEADING, layout.createSequentialGroup()
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(btn1, javax.swing.GroupLayout.PREFERRED_SIZE, 85, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(btn2, javax.swing.GroupLayout.PREFERRED_SIZE, 85, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(btn3, javax.swing.GroupLayout.PREFERRED_SIZE, 85, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(btn4, javax.swing.GroupLayout.PREFERRED_SIZE, 85, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(btn5, javax.swing.GroupLayout.PREFERRED_SIZE, 85, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(btn6, javax.swing.GroupLayout.PREFERRED_SIZE, 85, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(btn7, javax.swing.GroupLayout.PREFERRED_SIZE, 85, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(btn8, javax.swing.GroupLayout.PREFERRED_SIZE, 85, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(btn9, javax.swing.GroupLayout.PREFERRED_SIZE, 85, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                    .addGroup(javax.swing.GroupLayout.Alignment.LEADING, layout.createSequentialGroup()
-                        .addComponent(jTextField1, javax.swing.GroupLayout.PREFERRED_SIZE, 31, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(txtTurno, javax.swing.GroupLayout.PREFERRED_SIZE, 37, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(18, 18, 18)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(jTextField4, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jTextField3, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(txtJugador2, javax.swing.GroupLayout.PREFERRED_SIZE, 58, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(txtJugador1, javax.swing.GroupLayout.PREFERRED_SIZE, 58, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addGap(18, 18, 18)
-                        .addComponent(btnReset, javax.swing.GroupLayout.PREFERRED_SIZE, 27, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(btnNuevo, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addGap(18, 18, 18)
-                .addComponent(lblPuntos, javax.swing.GroupLayout.PREFERRED_SIZE, 27, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-        );
+        lblPuntos.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        lblPuntos.setForeground(new java.awt.Color(255, 255, 255));
+        getContentPane().add(lblPuntos, new org.netbeans.lib.awtextra.AbsoluteConstraints(12, 306, 480, 27));
+
+        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/tictactoegame/imagenes/negro5.png"))); // NOI18N
+        getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 500, 350));
 
         pack();
         setLocationRelativeTo(null);
@@ -619,6 +559,7 @@ public class TicTacToe extends javax.swing.JFrame {
     private javax.swing.JButton btn9;
     private javax.swing.JButton btnNuevo;
     private javax.swing.JButton btnReset;
+    private javax.swing.JLabel jLabel1;
     private javax.swing.JTextField jTextField1;
     private javax.swing.JTextField jTextField3;
     private javax.swing.JTextField jTextField4;
