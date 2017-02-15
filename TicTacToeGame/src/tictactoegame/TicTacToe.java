@@ -45,7 +45,7 @@ public class TicTacToe extends javax.swing.JFrame {
     
     
     public void puntaje(){
-        lblPuntos.setText("El primer jugador empieza con X y el segundo con O");
+        lblPuntos.setText("El jugador 1 empieza con X y el jugador 2 con O");
         
         txtTurno.setText(turno);
     }
@@ -67,7 +67,7 @@ public class TicTacToe extends javax.swing.JFrame {
      
      public void gananLasX(){
          
-         JOptionPane.showMessageDialog(this, "FELICIDADES EL PRIMER JUGADOR HA GANADO");
+         JOptionPane.showMessageDialog(this, "FELICIDADES EL JUGADOR 1 HA GANADO");
          jugador1++;
          txtJugador1.setText(String.valueOf(jugador1));
          btn1.setEnabled(false);
@@ -83,7 +83,7 @@ public class TicTacToe extends javax.swing.JFrame {
      
      public void gananLasO(){
          
-         JOptionPane.showMessageDialog(this, "FELICIDADES EL SEGUNDO JUGADOR HA GANADO");
+         JOptionPane.showMessageDialog(this, "FELICIDADES EL JUGADOR 2 HA GANADO");
          jugador2++;
          txtJugador2.setText(String.valueOf(jugador2));
          btn1.setEnabled(false);
@@ -96,6 +96,12 @@ public class TicTacToe extends javax.swing.JFrame {
          btn8.setEnabled(false);
          btn9.setEnabled(false);
      }
+     
+     public void hayEmpate(){
+         
+     }
+     
+     
      
      public void QuienGana(){
          
@@ -112,63 +118,93 @@ public class TicTacToe extends javax.swing.JFrame {
          if (uno == "X" && dos == "X" && tres == "X"){
              gananLasX();
          }
+         
          if(uno == "X" && cuatro == "X" && siete == "X"){
              gananLasX();
          }
+            
          if (uno == "X" && cinco == "X" && nueve == "X"){
              gananLasX();
          }
-         if (cuatro == "X" && cinco == "X" && seis == "X"){
+                 
+          if (cuatro == "X" && cinco == "X" && seis == "X"){
              gananLasX();
          }
-         if (siete == "X" && ocho == "X" && nueve == "X"){
+                     
+          if (siete == "X" && ocho == "X" && nueve == "X"){
              gananLasX();
          }
-         if (dos == "X" && cinco == "X" && ocho == "X"){
+                         
+           if (dos == "X" && cinco == "X" && ocho == "X"){
              gananLasX();
          }
-         if (tres == "X" && seis == "X" && nueve == "X"){
+                             
+           if (tres == "X" && seis == "X" && nueve == "X"){
              gananLasX();
          }
-         if (tres == "X" && cinco == "X" && siete == "X"){
+                                 
+          if (tres == "X" && cinco == "X" && siete == "X"){
              gananLasX();
          }
+                                    
+                                         
+                                 
+                             
+                         
+                     
+                 
+             
          
-                
          ////////////////////////////////////
          
+                                     
          if (uno == "O" && dos == "O" && tres == "O"){
              gananLasO();
          }
+                                         
          if (uno == "O" && cuatro == "O" && siete == "O"){
              gananLasO();
          }
+                                             
          if (uno == "O" && cinco == "O" && nueve == "O"){
              gananLasO();
          }
+                                                 
          if (cuatro == "O" && cinco == "O" && seis == "O"){
              gananLasO();
          }
+                                                    
          if (siete == "O" && ocho == "O" && nueve == "O"){
              gananLasO();
          }
+                                                         
          if (dos == "O" && cinco == "O" && ocho == "O"){
              gananLasO();
          }
+                                                             
          if (tres == "O" && seis == "O" && nueve == "O"){
              gananLasO();
          }
+                                                                
          if (tres == "O" && cinco == "O" && siete == "O"){
              gananLasO();
          }
-         
+                                                                     
          
          ///////////////////////////////
          
+		                                                        
+                                                             
+                                                         
+        if (uno == "X" | uno == "O" && dos == "X" | dos == "O" && tres == "X" | tres == "O" && cuatro == "X" | cuatro == "O" && cinco == "X" | cinco == "O" && seis == "X" | seis == "O" && siete == "X" | siete == "O" && ocho == "X" | ocho == "O" && nueve == "X" | nueve == "O")   {
+            JOptionPane.showMessageDialog(this, "HAY UN EMPATE, PUDES VOLVER A JUGAR");
+        }                                          
+                                                 
+                                                                          
+                             
     }
     
-     
-     
+ 
     /**
      * This method is called from within the constructor to initialize the form.
      * WARNING: Do NOT modify this code. The content of this method is always
@@ -321,7 +357,7 @@ public class TicTacToe extends javax.swing.JFrame {
                 btnResetActionPerformed(evt);
             }
         });
-        getContentPane().add(btnReset, new org.netbeans.lib.awtextra.AbsoluteConstraints(324, 225, 168, 27));
+        getContentPane().add(btnReset, new org.netbeans.lib.awtextra.AbsoluteConstraints(320, 260, 168, 27));
 
         btnNuevo.setBackground(new java.awt.Color(153, 153, 153));
         btnNuevo.setText("Jugar de nuevo");
@@ -331,7 +367,7 @@ public class TicTacToe extends javax.swing.JFrame {
                 btnNuevoActionPerformed(evt);
             }
         });
-        getContentPane().add(btnNuevo, new org.netbeans.lib.awtextra.AbsoluteConstraints(324, 261, 168, -1));
+        getContentPane().add(btnNuevo, new org.netbeans.lib.awtextra.AbsoluteConstraints(320, 220, 168, -1));
 
         lblPuntos.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         lblPuntos.setForeground(new java.awt.Color(255, 255, 255));
